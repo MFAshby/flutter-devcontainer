@@ -12,6 +12,7 @@ RUN wget https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip
 RUN mkdir android-sdk && unzip /sdk-tools-linux-4333796.zip -d android-sdk
 RUN rm /sdk-tools-linux-4333796.zip
 ENV ANDROID_HOME="/android-sdk"
+ENV PATH="/android-sdk/tools/bin:/android-sdk/build-tools:/android-sdk/platform-tools:${PATH}"
 
 # SDK manager
 RUN yes | sdkmanager --licenses
@@ -21,7 +22,7 @@ RUN sdkmanager "platforms;android-28" "platform-tools" "build-tools;28.0.3"
 RUN wget https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_v1.5.4-hotfix.2-stable.tar.xz
 RUN tar xf flutter_linux_v1.5.4-hotfix.2-stable.tar.xz 
 RUN rm flutter_linux_v1.5.4-hotfix.2-stable.tar.xz
-ENV PATH="/android-sdk/tools:/android-sdk/build-tools:/android-sdk/platform-tools:/flutter/bin:${PATH}"
+ENV PATH="/flutter/bin:${PATH}"
 
 RUN flutter config --no-analytics
 
