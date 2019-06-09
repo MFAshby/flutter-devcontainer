@@ -15,3 +15,7 @@ and flutter)
 new project
 * Running on a physical device is supported with `flutter run`, make sure you click the 
 dialog on the device in order to trust the computer you are connecting from!
+
+
+Please note when you use this container you're automatically agreeing to the 
+[Android SDK terms & conditions](https://developer.android.com/studio/terms)
