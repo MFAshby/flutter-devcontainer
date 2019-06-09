@@ -16,6 +16,10 @@ new project
 * Running on a physical device is supported with `flutter run`, make sure you click the 
 dialog on the device in order to trust the computer you are connecting from!
 
+Please note that this container is set to run in 
+[privileged mode](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities) 
+in order to access USB devices on the host machine. You should be aware of the security 
+implications of this. 
 
-Please note when you use this container you're automatically agreeing to the 
+Please also note when you use this container you're automatically agreeing to the 
 [Android SDK terms & conditions](https://developer.android.com/studio/terms)
