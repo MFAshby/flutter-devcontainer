@@ -1,6 +1,8 @@
 flutter-devcontainer
 --------------------
 
+*archived* this is quite old and I'm not maintaining it. Feel free to fork it :)
+
 A Dockerfile & config for developing with [Flutter](https://flutter.dev/) and 
 the [VS Remote - Containers](https://code.visualstudio.com/docs/remote/containers) 
 extension. 
